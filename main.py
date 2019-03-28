@@ -35,8 +35,8 @@ print (data_test.info())
 
 #visualize the data
 fig, ax = plt.subplots(figsize=(16,12),ncols=2)
-ax1 = sb.boxplot(x="Embarked", y="Fare", hue="Pclass", data=data_train, ax = ax[0]);
-ax2 = sb.boxplot(x="Embarked", y="Fare", hue="Pclass", data=data_test, ax = ax[1]);
-ax1.set_title("Training Set", fontsize = 18)
-ax2.set_title('Test Set',  fontsize = 18)
-fig.show()
+ax1 = sb.boxplot(x="Embarked", y="Fare", hue="Pclass", data=data_train, ax=ax[0]);
+ax2 = sb.boxplot(x="Embarked", y="Fare", hue="Pclass", data=data_test, ax=ax[1]);
+ax1.set_title("Training Set", fontsize=18)
+ax2.set_title('Test Set',  fontsize=18)
+plt.show()
